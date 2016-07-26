@@ -10,7 +10,9 @@ Here are Dockerfile to get you up and running with a fully functional [Microsoft
 git clone https://github.com/berlius/Microsoft-malmo
 cd Microsoft-malmo
 
-docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
+sudo nvidia-docker-plugin
+
+sudo docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
 ```
 
 This will build a Docker image named `microsoft-malmo`. 
