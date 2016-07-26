@@ -13,7 +13,7 @@ cd Microsoft-malmo
 docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
 ```
 
-This will build a Docker image named `Microsoft-malmo`. 
+This will build a Docker image named `microsoft-malmo`. 
 
 ## Running the Docker image as a Container
 Once we've built the image, we have all the frameworks we need installed in it. 
