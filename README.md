@@ -20,7 +20,7 @@ Once we've built the image, we have all the frameworks we need installed in it.
 
 **GPU Version**
 ```bash
-nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder berlius/Microsoft-malmo bash
+xhost + ; nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v /sharedfolder:/root/sharedfolder -e DISPLAY=unix$DISPLAY berlius/Microsoft-malmo bash
 ```
 Note the use of `nvidia-docker` rather than just `docker`
 
