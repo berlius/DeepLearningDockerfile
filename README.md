@@ -16,7 +16,7 @@ docker build -t berlius/microsoft-malmo -f Dockerfile .
 This will build a Docker image named `Microsoft-malmo`. 
 
 ## Running the Docker image as a Container
-Once we've built the image, we have all the frameworks we need installed in it. We can now spin up one or more containers using this image, and you should be ready to [go deeper](http://imgur.com/gallery/BvuWRxq)
+Once we've built the image, we have all the frameworks we need installed in it. 
 
 **CPU Version**
 ```bash
