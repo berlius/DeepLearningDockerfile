@@ -24,6 +24,8 @@ xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v `pwd`:/root/sh
 
 cd sharedfolder
 
+gnome-terminal
+
 wget https://github.com/Microsoft/malmo/releases/download/0.15.0/Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
 
 unzip Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
