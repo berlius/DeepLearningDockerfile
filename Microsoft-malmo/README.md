@@ -1,13 +1,13 @@
 ## Microsoft-malmo Docker image for Deep Learning
 
-Here are Dockerfile to get you up and running with a fully functional [Microsoft-Malmo](https://github.com/Microsoft/malmo) installation. 
+Here are Dockerfile to get you up and running with a fully functional [Microsoft-malmo](https://github.com/Microsoft/malmo) installation. 
 
 ## Setup
 1. Install [All-in-one Docker image for Deep Learning](https://github.com/saiprashanths/dl-docker/) following the installation guide.
 
 2. Build the Docker image locally : 
 ```bash
-git clone https://github.com/berlius/Microsoft-malmo
+git clone https://github.com/berlius/DeepLearningDockerfile
 cd Microsoft-malmo
 
 sudo docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
