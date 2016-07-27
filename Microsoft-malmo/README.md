@@ -20,7 +20,7 @@ This will build a Docker image named `microsoft-malmo`.
 ```bash
 sudo nvidia-docker-plugin
 
-xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v `pwd`:/root/sharedfolder -e DISPLAY=unix$DISPLAY berlius/microsoft-malmo:gpu bash
+xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v `pwd`:/root/sharedfolder -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/microsoft-malmo:gpu bash
 
 cd sharedfolder
 
