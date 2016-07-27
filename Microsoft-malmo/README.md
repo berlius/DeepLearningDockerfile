@@ -6,9 +6,10 @@ Here are Dockerfile to get you up and running with a fully functional [Microsoft
 1. Install [All-in-one Docker image for Deep Learning](https://github.com/saiprashanths/dl-docker/) following the installation guide.
 
 2. Build the Docker image locally : 
+
 ```bash
 git clone https://github.com/berlius/DeepLearningDockerfile
-cd Microsoft-malmo
+cd DeepLearningDockerfile/Microsoft-malmo
 
 sudo docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
 ```
