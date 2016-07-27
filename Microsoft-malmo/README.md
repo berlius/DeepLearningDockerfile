@@ -21,7 +21,20 @@ This will build a Docker image named `microsoft-malmo`.
 sudo nvidia-docker-plugin
 
 xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v `pwd`:/root/sharedfolder -e DISPLAY=unix$DISPLAY berlius/microsoft-malmo:gpu bash
+
+cd sharedfolder
+
+wget https://github.com/Microsoft/malmo/releases/download/0.15.0/Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
+
+unzip Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
+
+cd Malmo-0.15.0-Linux-Ubuntu-14.04-64bit/Minecraft
+
+./launchClient.sh
+
 ```
+Note `wget` et `unzip` is required for the first installation only.
+
 Note the use of `nvidia-docker` rather than just `docker`
 
 | Parameter      | Explanation |
