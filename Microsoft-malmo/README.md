@@ -10,18 +10,15 @@ Here are Dockerfile to get you up and running with a fully functional [Microsoft
 git clone https://github.com/berlius/Microsoft-malmo
 cd Microsoft-malmo
 
-sudo nvidia-docker-plugin
-
 sudo docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
 ```
 
 This will build a Docker image named `microsoft-malmo`. 
 
 ## Running the Docker image as a Container
-Once we've built the image, we have all the frameworks we need installed in it. 
-
-**GPU Version**
 ```bash
+sudo nvidia-docker-plugin
+
 xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v `pwd`:/root/sharedfolder -e DISPLAY=unix$DISPLAY berlius/microsoft-malmo:gpu bash
 ```
 Note the use of `nvidia-docker` rather than just `docker`
