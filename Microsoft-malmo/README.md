@@ -2,7 +2,7 @@
 
 Here are Dockerfile to get you up and running with a fully functional [Microsoft-malmo](https://github.com/Microsoft/malmo) installation. 
 
-Here are a [Vidéo demo](https://youtu.be/vtT4wyiR2Uo) lynk . 
+Here are a [Vidéo demo](https://youtu.be/vtT4wyiR2Uo) link . 
 
 ## Setup
 1. Install [All-in-one Docker image for Deep Learning](https://github.com/saiprashanths/dl-docker/) following the installation guide.
