@@ -1,4 +1,4 @@
-FROM floydhub/dl-docker:gpu
+FROM floydhub/dl-docker:cpu
 
 MAINTAINER berlius <berlius52@yahoo.com>
 
