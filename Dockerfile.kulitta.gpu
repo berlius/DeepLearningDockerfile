@@ -1,4 +1,4 @@
-FROM berlius/artificial-intelligence
+FROM berlius/artificial-intelligence-gpu
 
 MAINTAINER berlius <berlius52@yahoo.com>
 
