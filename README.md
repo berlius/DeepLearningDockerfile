@@ -42,6 +42,6 @@ docker build berlius/[project name]-gpu -f Dockerfile.[project name].gpu
 ````
 docker build berlius/[project name]-cpu -f Dockerfile.[project name].cpu
 ````
-
+where "project name" is for example "Kulitta" for "Dockerfile.Kulitta.cpu"
 
 
