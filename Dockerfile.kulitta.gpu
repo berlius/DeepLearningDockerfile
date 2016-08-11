@@ -5,12 +5,19 @@ MAINTAINER berlius <berlius52@yahoo.com>
 # Install some dependencies
 #RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 575159689BEFB442
 #RUN echo 'deb http://download.fpcomplete.com/ubuntu trusty main'|sudo tee /etc/apt/sources.list.d/fpco.list
-#RUN apt-get update & apt-get install -y stack
+# RUN apt-get update 
 
-RUN wget https://www.haskell.org/platform/download/2014.2.0.0/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
-RUN tar xvf haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
+#RUN sudo apt-get install -y software-properties-common
 
-ENV export PATH=/usr/local/haskell/ghc-7.8.3-x86_64/bin:$PATH
+RUN sudo add-apt-repository -y ppa:hvr/ghc
+RUN apt-get update
+RUN sudo apt-get install -y cabal-install-1.22 ghc-7.8.3
+
+#RUN wget https://www.haskell.org/platform/download/2014.2.0.0/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
+#RUN tar xvf haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
+
+#ENV export PATH=/usr/local/haskell/ghc-7.8.3-x86_64/bin:$PATH
+ENV export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.3/bin:$PATH
 
 # Install Euterpea
 RUN cabal update
