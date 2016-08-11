@@ -28,7 +28,7 @@ docker pull berlius/[project name]-gpu
 ````
 docker pull berlius/[project name]-cpu
 ````
-where "project name" is for example "Kulitta" for "Dockerfile.Kulitta.gpu"
+where "project name" is for example "kulitta" for "Dockerfile.kulitta.gpu"
 
 #### Option 2 : You can compile localy :
 
@@ -48,6 +48,6 @@ cd DeepLearningDockerfile
 
 docker build -t berlius/[project name]-cpu -f Dockerfile.[project name].cpu
 ````
-where "project name" is for example "Kulitta" for "Dockerfile.Kulitta.cpu"
+where "project name" is for example "kulitta" for "Dockerfile.kulitta.cpu"
 
 
