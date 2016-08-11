@@ -38,7 +38,7 @@ where "project name" is for example "kulitta" for "Dockerfile.kulitta.gpu"
 git clone https://github.com/berlius/DeepLearningDockerfile
 cd DeepLearningDockerfile
 
-docker build -t berlius/[project name]-gpu -f Dockerfile.[project name].gpu
+docker build -t berlius/[project name]-gpu -f Dockerfile.[project name].gpu .
 ````
 ** CPU version **
 
@@ -46,7 +46,7 @@ docker build -t berlius/[project name]-gpu -f Dockerfile.[project name].gpu
 git clone https://github.com/berlius/DeepLearningDockerfile
 cd DeepLearningDockerfile
 
-docker build -t berlius/[project name]-cpu -f Dockerfile.[project name].cpu
+docker build -t berlius/[project name]-cpu -f Dockerfile.[project name].cpu .
 ````
 where "project name" is for example "kulitta" for "Dockerfile.kulitta.cpu"
 
