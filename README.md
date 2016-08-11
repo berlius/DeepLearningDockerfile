@@ -10,32 +10,34 @@ Here are Dockerfiles to let you install images on various projects in deep learn
 3. Possibility of multiples versions of a project without conflict.
 
 
-### Install
+### Setup
 
 All Dockerfiles are on top off the environment of [development for intelligence-artificial]( https://github.com/berlius/artificial-intelligence)
 
-You can download from my dockerhub repository :
+### Obtaining the Docker image
+You have 2 options to obtain the Docker image
+#### Option 1 : Download the Docker image from Docker Hub
 
-## GPU version
+** GPU version **
 
 ````
 docker pull berlius/[project name]-gpu
 ````
-## CPU version
+** CPU version ***
 
 ````
 docker pull berlius/[project name]-cpu
 ````
 where "project name" is for example "Kulitta" for "Dockerfile.Kulitta.gpu"
 
-You can compile localy :
+#### Option 2 : You can compile localy :
 
-## GPU version
+** GPU version **
 
 ````
 docker build berlius/[project name]-gpu -f Dockerfile.[project name].gpu
 ````
-## CPU version
+** CPU version **
 
 ````
 docker build berlius/[project name]-cpu -f Dockerfile.[project name].cpu
