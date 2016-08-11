@@ -9,10 +9,10 @@ Here are Dockerfiles to let you install images on various projects in deep learn
 
 3. Possibility of multiples versions of a project without conflict.
 
-environment
+
 ### Setup
 
-All Dockerfiles are on top off [development  for intelligence-artificial]( https://github.com/berlius/artificial-intelligence)
+All Dockerfiles are on top off [development environment for intelligence-artificial]( https://github.com/berlius/artificial-intelligence)
 
 ### Obtaining the Docker image
 You have 2 options to obtain the Docker image
