@@ -36,9 +36,17 @@ RUN if [ !-d Kulitta ]; then git clone https://github.com/donya/Kulitta \
                         cabal install
 
 RUN wget https://sourceforge.net/projects/jmusic/files/jMusic_Stable/1.6.4/jMusic1.6.4.jar/downloa
+RUN wget https://sourceforge.net/projects/jmusic/files/jMusic_Instruments/1.6/jMusic_1.6_inst.zip/download
 
 # Install PythonKulitta
-RUN if [ !-d PythonKulitta ]; then git clone https://github.com/donya/PythonKulitta
+RUN if [ !-d PythonKulitta ]; then git clone https://github.com/donya/PythonKulitta \
+                              cd PythonKulitta\
+                              git clone https://github.com/vishnubob/python-midi \
+                              cd python-midi \
+                              python setup.py install \
+                              cd ..
+                              
+
 
 
 
