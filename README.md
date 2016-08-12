@@ -1,6 +1,6 @@
 ## Dockerfiles for Deep Learning
 
-Here are Dockerfiles to let you install images on various projects in deep learning. 
+Here are Dockerfiles to let you install images on various projects in deep learning. All Dockerfiles are on top off [development environment for intelligence-artificial]( https://github.com/berlius/artificial-intelligence)
 
 ### Why ?
 1. Easy installation and acces to GPU with nvidia docker.
@@ -12,11 +12,8 @@ Here are Dockerfiles to let you install images on various projects in deep learn
 
 ### Setup
 
-All Dockerfiles are on top off [development environment for intelligence-artificial]( https://github.com/berlius/artificial-intelligence)
-
-### Obtaining the Docker image
 You have 2 options to obtain the Docker image
-#### Option 1 : Download the Docker image from Docker Hub
+#### Option 1 : Download the Docker image from Docker Hub. The first time you download this may take awhile according to your internet connection  because of the development environment but after it is very quick for other projects 
 
 ** GPU version **
 
