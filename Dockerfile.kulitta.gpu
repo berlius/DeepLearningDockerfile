@@ -3,50 +3,39 @@ FROM berlius/artificial-intelligence-gpu
 MAINTAINER berlius <berlius52@yahoo.com>
 
 # Install some dependencies
-#RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 575159689BEFB442
-#RUN echo 'deb http://download.fpcomplete.com/ubuntu trusty main'|sudo tee /etc/apt/sources.list.d/fpco.list
-# RUN apt-get update 
-
-#RUN sudo apt-get install -y software-properties-common
-
-RUN cd sharedfolder
-
 RUN sudo add-apt-repository -y ppa:hvr/ghc
 RUN sudo apt-get update
-RUN sudo apt-get install -y cabal-install-1.22 ghc-7.8.3
+RUN sudo apt-get install -y cabal-install-1.22 ghc-7.10.3
 
-#RUN wget https://www.haskell.org/platform/download/2014.2.0.0/haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
-#RUN tar xvf haskell-platform-2014.2.0.0-unknown-linux-x86_64.tar.gz
-
-#ENV export PATH=/usr/local/haskell/ghc-7.8.3-x86_64/bin:$PATH
-ENV export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.3/bin:$PATH
+# Updating environment variables
+ENV PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.10.3/bin:$PATH
 
 # Install Euterpea
 RUN cabal update
 RUN cabal install Euterpea
 
-RUN if [ !-d HSoM ]; then git clone https://github.com/Euterpea/HSoM \
-                          cd HSoM \
-                          cabal install \
-                          cd ..
+RUN git clone https://github.com/Euterpea/HSoM; \
+                          cd HSoM; \
+                          cabal install; \
+                          cd .. 
+                          
 
 # Install Kulitta
-RUN if [ !-d Kulitta ]; then git clone https://github.com/donya/Kulitta \
-                        cd Kulitta \
-                        cabal install
+RUN git clone https://github.com/donya/Kulitta; \
+                        cd Kulitta; \
+                        cabal install 
 
-RUN wget https://sourceforge.net/projects/jmusic/files/jMusic_Stable/1.6.4/jMusic1.6.4.jar/downloa
-RUN wget https://sourceforge.net/projects/jmusic/files/jMusic_Instruments/1.6/jMusic_1.6_inst.zip/download
 
 # Install PythonKulitta
-RUN if [ !-d PythonKulitta ]; then git clone https://github.com/donya/PythonKulitta \
-                              cd PythonKulitta\
-                              git clone https://github.com/vishnubob/python-midi \
-                              cd python-midi \
-                              python setup.py install \
-                              cd ..
+RUN git clone https://github.com/donya/PythonKulitta; \
+                              cd PythonKulitta; \
+                              git clone https://github.com/vishnubob/python-midi; \
+                              cd python-midi; \
+                              python setup.py install; \
+                              cd .. 
                               
-
+WORKDIR "/root/sharedfolder"
+CMD ["/bin/bash"]
 
 
 
