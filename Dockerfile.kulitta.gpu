@@ -25,15 +25,15 @@ ENV export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.3/bin:$PATH
 RUN cabal update
 RUN cabal install Euterpea
 
-RUN if [ !-d HSoM ]; then git clone https://github.com/Euterpea/HSoM
-RUN cd HSoM
-RUN cabal install
-RUN cd ..
+RUN if [ !-d HSoM ]; then git clone https://github.com/Euterpea/HSoM \
+                          cd HSoM \
+                          cabal install \
+                          cd ..
 
 # Install Kulitta
-RUN if [ !-d Kulitta ]; then git clone https://github.com/donya/Kulitta
-RUN cd Kulitta
-RUN cabal install
+RUN if [ !-d Kulitta ]; then git clone https://github.com/donya/Kulitta \
+                        cd Kulitta \
+                        cabal install
 
 # Install PythonKulitta
 RUN if [ !-d PythonKulitta ]; then git clone https://github.com/donya/PythonKulitta
