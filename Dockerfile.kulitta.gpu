@@ -34,6 +34,14 @@ RUN git clone https://github.com/donya/PythonKulitta; \
                               python setup.py install; \
                               cd .. 
                               
+RUN echo "************************************************************"
+RUN echo "* for testing  you can type in the terminal \"lxterminal\" :"
+RUN echo "*     ../PythonKulitta/ExamplesGUI.py
+RUN echo "*"
+RUN echo "* a file named \"test.mid\" is created in your sharedfolder"
+RUN echo "* you can play the file by typing in the terminal \"lxterminal\" :"
+RUN echo "*      timidity \"test.mid\"  "                              
+                              
 WORKDIR "/root/sharedfolder"
 CMD ["/bin/bash"]
 
