@@ -36,6 +36,6 @@ RUN cd Kulitta
 RUN cabal install
 
 # Install PythonKulitta
-RUN git clone https://github.com/donya/PythonKulitta
+RUN if [ !-d PythonKulitta ]; then git clone https://github.com/donya/PythonKulitta
 
 
