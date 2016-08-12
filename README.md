@@ -15,12 +15,12 @@ Here are Dockerfiles to let you install images on various projects in deep learn
 You have 2 options to obtain the Docker image
 #### Option 1 : Download the Docker image from Docker Hub. The first time you download this may take awhile according to your internet connection  because of the development environment but after it is very quick for other projects 
 
-**GPU version
+**GPU version**
 
 ````
 docker pull berlius/[project name]-gpu
 ````
-**CPU version
+**CPU version**
 
 ````
 docker pull berlius/[project name]-cpu
@@ -29,7 +29,7 @@ where "project name" is for example "kulitta" for "Dockerfile.kulitta.gpu"
 
 #### Option 2 : You can compile localy :
 
-**GPU version
+**GPU version**
 
 ````
 git clone https://github.com/berlius/DeepLearningDockerfile
