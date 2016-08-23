@@ -5,7 +5,20 @@ Here are Dockerfile to get you up and running with a fully functional [Microsoft
 Here are a [Vidéo demo](https://youtu.be/vtT4wyiR2Uo) link . 
 
 ## Setup
-1. Install [Artificial Intelligence made easy for all](https://github.com/berlius/artificial-intelligence) following the installation guide.
+Install [Artificial Intelligence made easy for all](https://github.com/berlius/artificial-intelligence) following the installation guide.
+
+You have 2 options to obtain the Docker image
+#### Option 1 : Download the Docker image from Docker Hub
+Docker Hub is a cloud based repository of pre-built images. You can download the image directly from here, which should be _much faster_ than building it locally (a few minutes, based on your internet speed).
+
+**GPU Version**
+```bash
+docker pull berlius/microsoft-malmo:gpu
+```
+
+#### Option 2 : Build the Docker image locally 
+
+### GPU version
 
 2. Build the Docker image locally : 
 
