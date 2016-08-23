@@ -1,32 +1,20 @@
 ## Microsoft-malmo Docker image for Deep Learning
 
-Here are Dockerfile to get you up and running with a fully functional [Microsoft-malmo](https://github.com/Microsoft/malmo) installation. 
-
-Here are a [Vidéo demo](https://youtu.be/vtT4wyiR2Uo) link . 
+Here are a tutorial to install [Microsoft-malmo](https://github.com/Microsoft/malmo) 
 
 ## Setup
-1. Install [All-in-one Docker image for Deep Learning](https://github.com/saiprashanths/dl-docker/) following the installation guide.
-
-2. Build the Docker image locally : 
-
-```bash
-git clone https://github.com/berlius/DeepLearningDockerfile
-cd DeepLearningDockerfile/Microsoft-malmo
-
-sudo docker build -t berlius/microsoft-malmo:gpu -f Dockerfile .
-```
-
-This will build a Docker image named `microsoft-malmo`. 
+1. Install [Artificial Intelligence made easy for all](https://github.com/berlius/artificial-intelligence) following the installation guide.
 
 ## Running the Docker image as a Container
-```bash
+```
 sudo nvidia-docker-plugin
 
-xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -v `pwd`:/root/sharedfolder -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/microsoft-malmo:gpu bash
+xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/artificial-intelligence-gpu lxterminal
+```
+In "lxterminal" :
 
+```
 cd sharedfolder
-
-gnome-terminal
 
 wget https://github.com/Microsoft/malmo/releases/download/0.15.0/Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
 
