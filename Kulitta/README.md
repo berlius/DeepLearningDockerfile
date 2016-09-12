@@ -36,10 +36,10 @@ git clone https://github.com/berlius/DeepLearningDockerfile/Kulitta
 cd Kulitta
 
 sudo docker build -t berlius/kulitta:cpu -f Dockerfile.cpu .
-``
+```
 
 ## Running the Docker image as a Container
-```
+
 ### GPU version
 ```
 sudo nvidia-docker-plugin
