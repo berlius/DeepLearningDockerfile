@@ -1,6 +1,6 @@
 ## Kulitta Docker image for Deep Learning
 
-Here are Dockerfile to get you up and running with a fully functional [Kulitta](https://github.com/donya/Kulitta) installation. [Web site](http://www.donyaquick.com/kulitta).
+Here are Dockerfile to get you up and running with a fully functional [Kulitta](https://github.com/donya/Kulitta) installation. [Website](http://www.donyaquick.com/kulitta).
 
 ## Setup
 
