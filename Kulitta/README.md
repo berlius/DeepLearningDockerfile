@@ -46,13 +46,13 @@ sudo nvidia-docker-plugin
 
 xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/kulitta:gpu lxterminal
 ```
-In "lxterminal" test installation:
+In "lxterminal" test the installation:
 
 ```
 python ../PythonKulitta/Examples.py
 
 ```
-The file "test.mid" is generate in your sharedfolder. Play with :
+The file "test.mid" is generated in your shared folder. Play with :
 
 ```
 timidity test.mid
@@ -63,13 +63,13 @@ sudo nvidia-docker-plugin
 
 xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/kulitta:cpu lxterminal
 ```
-In "lxterminal" test installation:
+In "lxterminal" test the installation:
 
 ```
 python ../PythonKulitta/Examples.py
 
 ```
-The file "test.mid" is generate in your sharedfolder. Play with :
+The file "test.mid" is generated in your shared folder. Play with :
 
 ```
 timidity test.mid
