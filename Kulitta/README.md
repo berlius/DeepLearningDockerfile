@@ -57,6 +57,13 @@ The file "test.mid" is generated in your shared folder. Play with :
 ```
 timidity test.mid
 ```
+
+the GUI version :
+```
+python ../PythonKulitta/ExampleGUI.py
+
+```
+
 ### CPU version
 ```
 sudo nvidia-docker-plugin
@@ -73,6 +80,11 @@ The file "test.mid" is generated in your shared folder. Play with :
 
 ```
 timidity test.mid
+```
+the GUI version :
+```
+python ../PythonKulitta/ExampleGUI.py
+
 ```
 
 Note the use of `nvidia-docker` rather than just `docker`
