@@ -49,7 +49,7 @@ xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `
 In "lxterminal" only for the first time installation:
 
 ```
-./install
+./install.sh
 
 ```
 this will install "text-to-image" in your shared folder. When "NLTK downloader" prompt, click the "download" button. You can see the progress at the bottom.
@@ -63,7 +63,7 @@ xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `
 In "lxterminal" only for the first time installation:
 
 ```
-./install
+./install.sh
 
 ```
 this will install "text-to-image" in your shared folder. When "NLTK downloader" prompt, click the "download" button. You can see the progress at the bottom.
