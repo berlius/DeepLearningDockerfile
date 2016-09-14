@@ -52,7 +52,7 @@ In "lxterminal" only for the first time installation:
 ./install
 
 ```
-this will install "text-to-image" in your sharedfolder. When "NLTK downloader" prompt, click the "download" button. You can see the progress at the bottom.
+this will install "text-to-image" in your shared folder. When "NLTK downloader" prompt, click the "download" button. You can see the progress at the bottom.
 
 ### CPU version
 ```
@@ -66,7 +66,7 @@ In "lxterminal" only for the first time installation:
 ./install
 
 ```
-this will install "text-to-image" in your sharedfolder. When "NLTK downloader" prompt, click the "download" button. You can see the progress at the bottom.
+this will install "text-to-image" in your shared folder. When "NLTK downloader" prompt, click the "download" button. You can see the progress at the bottom.
 
 
 Note the use of `nvidia-docker` rather than just `docker`
