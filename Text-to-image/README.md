@@ -36,7 +36,7 @@ git clone https://github.com/berlius/DeepLearningDockerfile/Text-to-image
 cd Text-to-image
 
 sudo docker build -t berlius/text-to-image:cpu -f Dockerfile.cpu .
-``
+```
 
 ## Running the Docker image as a Container
 
