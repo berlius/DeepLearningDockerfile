@@ -25,7 +25,7 @@ docker pull berlius/intro-to-rl:cpu
 
 ```
 git clone https://github.com/berlius/DeepLearningDockerfile
-cd intro-to-rl
+cd DeepLearningDockerfile/intro-to-rl
 
 sudo docker build -t berlius/intro-to-rl:gpu -f Dockerfile.gpu .
 ```
@@ -33,7 +33,7 @@ sudo docker build -t berlius/intro-to-rl:gpu -f Dockerfile.gpu .
 
 ```
 git clone https://github.com/berlius/DeepLearningDockerfile
-cd intro-to-rl
+cd DeepLearningDockerfile/intro-to-rl
 
 sudo docker build -t berlius/intro-to-rl:cpu -f Dockerfile.cpu .
 ```
