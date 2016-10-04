@@ -68,9 +68,8 @@ some graphics take time in calculation before display. be patient
 
 ### CPU version
 ```
-sudo nvidia-docker-plugin
 
-xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/intro-to-rl:cpu lxterminal
+xhost + ; sudo docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/intro-to-rl:cpu lxterminal
 ```
 In "lxterminal" if you do not wish a permanently installation :
 
