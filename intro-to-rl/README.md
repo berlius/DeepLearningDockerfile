@@ -24,7 +24,7 @@ docker pull berlius/intro-to-rl:cpu
 ### GPU version
 
 ```
-git clone https://github.com/berlius/DeepLearningDockerfile/intro-to-rl
+git clone https://github.com/berlius/DeepLearningDockerfile/tree/master/intro-to-rl
 cd intro-to-rl
 
 sudo docker build -t berlius/intro-to-rl:gpu -f Dockerfile.gpu .
@@ -32,7 +32,7 @@ sudo docker build -t berlius/intro-to-rl:gpu -f Dockerfile.gpu .
 ### CPU version
 
 ```
-git clone https://github.com/berlius/DeepLearningDockerfile/intro-to-rl
+git clone https://github.com/berlius/DeepLearningDockerfile/tree/master/intro-to-rl
 cd intro-to-rl
 
 sudo docker build -t berlius/intro-to-rl:cpu -f Dockerfile.cpu .
