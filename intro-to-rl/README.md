@@ -1,6 +1,6 @@
-## intro-to-rl Docker image for Reinforcement Learning tutorial
+## intro-to-rl Docker image for Reinforcement Learning tutorials
 
-Here are Dockerfile to get you up and running with a fully functional [Reinforcement Learning tutorial](https://github.com/btaba/intro-to-rl) from [the book](https://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html) . 
+Here are Dockerfile to get you up and running with a fully functional [Reinforcement Learning tutorials](https://github.com/btaba/intro-to-rl) from [this book](https://webdocs.cs.ualberta.ca/~sutton/book/ebook/the-book.html) . 
 
 ## Setup
 
