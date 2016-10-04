@@ -36,7 +36,7 @@ git clone https://github.com/berlius/DeepLearningDockerfile/intro-to-rl
 cd intro-to-rl
 
 sudo docker build -t berlius/intro-to-rl:cpu -f Dockerfile.cpu .
-``
+```
 
 ## Running the Docker image as a Container
 
