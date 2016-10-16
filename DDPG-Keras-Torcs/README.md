@@ -1,6 +1,6 @@
 ## ddpg-keras-torcs Docker image for AI Racing Game
 
-Here are Dockerfile to get you up and running with a fully functional [Using Keras and Deep Deterministic Policy Gradient to play TORCS](https://github.com/yanpanlau/DDPG-Keras-Torcs) [Website](https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html) . 
+Here are Dockerfile to get you up and running with a fully functional [Using Keras and Deep Deterministic Policy Gradient to play TORCS](https://github.com/yanpanlau/DDPG-Keras-Torcs) code and  [Website](https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html) . 
 
 ## Setup
 
