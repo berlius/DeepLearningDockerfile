@@ -59,7 +59,7 @@ and go to the web browser at adresse http://localhost:8888
 In "lxterminal" only if you wish a permanently installation in your shared folder:
 
 ```
-./install
+./install.sh
 cd sharedfolder/intro-to-rl/notebooks
 jupyter notebook
 
@@ -84,7 +84,7 @@ and go to the web browser at adresse http://localhost:8888
 In "lxterminal" only if you wish a permanently installation in your shared folder:
 
 ```
-./install
+./install.sh
 cd sharedfolder/intro-to-rl/notebooks
 jupyter notebook
 
