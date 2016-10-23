@@ -22,7 +22,7 @@ docker pull berlius/synthesizing:cpu
 
 #### Option 2 : Build the Docker image locally 
 
-** GPU version **
+**GPU version**
 
 ```
 git clone https://github.com/berlius/DeepLearningDockerfile
@@ -31,7 +31,7 @@ cd synthesizing-image
 sudo docker build -t berlius/synthesizing:gpu -f Dockerfile.gpu .
 ```
 
-** CPU version **
+**CPU version**
 
 ```
 git clone https://github.com/berlius/DeepLearningDockerfile
@@ -44,7 +44,7 @@ sudo docker build -t berlius/synthesizing:cpu -f Dockerfile.cpu .
 
 from your shared folder :
 
-** GPU version **
+**GPU version**
 
 ```
 sudo nvidia-docker-plugin
@@ -58,7 +58,7 @@ Only for the first installation :
 
 ```
 
-** CPU version **
+**CPU version**
 
 ```
 xhost + ; sudo docker run -it -v `pwd`:/root/sharedfolder --privileged -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/synthesizing:cpu 
