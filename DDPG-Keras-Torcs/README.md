@@ -4,6 +4,8 @@ Here are Dockerfile to get you up and running with a fully functional [Using Ker
 
 ## Setup
 
+[Here is a video of the installation](https://youtu.be/iRjS_EqwyDA)
+
 You have 2 options to obtain the Docker image
 
 #### Option 1 : Download the Docker image from Docker Hub
