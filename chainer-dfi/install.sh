@@ -23,7 +23,7 @@ python src/train.py sample/sample.png sample/out.png image/normal image/smile -g
 
 echo
 echo
-echo "See results in \"sample\" folder"
+echo "See results in \"image\" folder"
 
 
 
