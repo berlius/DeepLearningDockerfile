@@ -1,8 +1,6 @@
 ## Microsoft-malmo Docker image for Deep Learning
 
-Here are Dockerfile to get you up and running with a fully functional [Microsoft-malmo](https://github.com/Microsoft/malmo) installation. 
-
-Here are a [Vidéo demo](https://youtu.be/vtT4wyiR2Uo) link . 
+Here are Dockerfile to get you up and running with a fully functional [Microsoft-malmo](https://github.com/Microsoft/malmo) installation.
 
 ## Setup
 Install [Artificial Intelligence made easy for all](https://github.com/berlius/artificial-intelligence) following the installation guide.
