@@ -38,11 +38,11 @@ In "lxterminal" :
 ```
 cd sharedfolder
 
-wget https://github.com/Microsoft/malmo/releases/download/0.15.0/Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
+wget https://github.com/Microsoft/malmo/releases/download/0.19.0/Malmo-0.19.0-Linux-Ubuntu-14.04-64bit_withBoost.zip
 
-unzip Malmo-0.15.0-Linux-Ubuntu-14.04-64bit.zip
+unzip Malmo-0.19.0-Linux-Ubuntu-14.04-64bit_withBoost.zip 
 
-cd Malmo-0.15.0-Linux-Ubuntu-14.04-64bit/Minecraft
+cd Malmo-0.19.0-Linux-Ubuntu-14.04-64bit_withBoost/Minecraft
 
 ./launchClient.sh
 
