@@ -24,6 +24,10 @@ sudo docker build -t berlius/generative-latent-optimization-tensorflow -f Docker
 
 ## Running the Docker image as a Container from your shared folder :
 
+```
+xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/generative-latent-optimization-tensorflow lxterminal
+```
+
 ### Data Sharing
 See [Docker container persistence](#docker-container-persistence). 
 Consider this: You have a script that you've written on your host machine. You want to run this in the container and get the output data (say, a trained model) back into your host. The way to do this is using a [Shared Volumne](#docker-container-persistence). By passing in the `-v /sharedfolder/:/root/sharedfolder` to the CLI, we are sharing the folder between the host and the container, with persistence. You could copy your script into `/sharedfolder` folder on the host, execute your script from inside the container (located at `/root/sharedfolder`) and write the results data back to the same folder. This data will be accessible even after you kill the container.
