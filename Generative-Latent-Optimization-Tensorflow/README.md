@@ -10,7 +10,7 @@ You have 2 options to obtain the Docker image
 Docker Hub is a cloud based repository of pre-built images. You can download the image directly from here, which should be _much faster_ than building it locally (a few minutes, based on your internet speed).
 
 ```bash
-docker pull berlius//generative-latent-optimization-tensorflow
+docker pull berlius/generative-latent-optimization-tensorflow
 ```
 
 #### Option 2 : Build the Docker image locally 
