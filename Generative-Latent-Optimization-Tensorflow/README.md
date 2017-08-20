@@ -25,7 +25,7 @@ sudo docker build -t berlius/generative-latent-optimization-tensorflow -f Docker
 ## Running the Docker image as a Container from your shared folder :
 
 ```
-xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/generative-latent-optimization-tensorflow lxterminal
+xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/generative-latent-optimization-tensorflow bash
 ```
 
 ### Data Sharing
