@@ -17,7 +17,7 @@ docker pull berlius/generative-latent-optimization-tensorflow
 
 ```
 git clone https://github.com/berlius/DeepLearningDockerfile
-cd generative-latent-optimization-tensorflow
+cd Generative-Latent-Optimization-Tensorflow
 
 sudo docker build -t berlius/generative-latent-optimization-tensorflow -f Dockerfile.gpu .
 ```
