@@ -27,6 +27,20 @@ sudo docker build -t berlius/generative-latent-optimization-tensorflow -f Docker
 ```
 xhost + ; sudo nvidia-docker run -it -p 8888:8888 -p 6006:6006 -p 8000:8000 -v `pwd`:/root/sharedfolder -v /mnt/sda4:/root/sda4 --privileged --device=/dev/snd:/dev/snd -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY=unix$DISPLAY berlius/generative-latent-optimization-tensorflow bash
 ```
+## Use. From root shell docker container in your shared folder :
+
+```
+git clone https://github.com/gitlimlab/Generative-Latent-Optimization-Tensorflow
+
+cd Generative-Latent-Optimization-Tensorflow/
+
+python download.py --datasets MNIST --distribution PCA --dimension 10
+
+python trainer.py --dataset MNIST --alpha 5 --dump_result --batch_size 32
+
+python evaler.py --dataset MNIST --checkpoint train_dir/default-MNIST_lr_0.0001-20170820-092213/model-3001 --prefix mnist --reconstruct --generate
+```
+Very fast, even on CPU. The time is almost the same on MNIST and CIFAR10 !
 
 ### Data Sharing
 See [Docker container persistence](#docker-container-persistence). 
